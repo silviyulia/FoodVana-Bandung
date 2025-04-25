@@ -1,0 +1,137 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar .logo .circle {
+  width: 30px;
+  height: 30px;
+  background-color: gold;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar .menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar .menu a:hover {
+  color: #007bff;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Section: Welcome */
+.welcome-section {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome-text {
+  flex: 1 1 50%;
+}
+
+.welcome-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.food-image {
+  flex: 1 1 40%;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Footer Contact */
+.footer-contact {
+  border: 2px solid #fafcff;
+  padding: 20px;
+  margin: 40px auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  background-color: #f8f9fa;
+}
+
+.footer-contact div {
+  margin: 10px;
+}
+
+.footer-contact s {
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar .menu {
+    margin-top: 10px;
+  }
+
+  .welcome-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-text, .food-image {
+    flex: 1 1 100%;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    text-align: center;
+  }
+}
